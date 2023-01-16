@@ -45,9 +45,9 @@ export default function Home() {
       </Head>
       <main>
         <div className="snap max-h-screen snap-y snap-proximity overflow-y-scroll">
-          <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
-            <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
-              <div className="js-show-on-scroll col-span-5 col-start-2">
+          <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200 ">
+            <div className="js-show-on-scroll grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+              <div className=" js-show-on-scroll col-span-5 col-start-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
                 excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
                 accusamus cupiditate alias perferendis ea ut voluptas explicabo.
