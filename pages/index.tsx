@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,28 +12,57 @@ export default function Home() {
       </Head>
       <main>
         <div className="snap max-h-screen snap-y snap-proximity overflow-y-scroll">
-          <section className="flex h-screen w-full snap-start bg-red-200">
-            <div className="m-auto">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-              excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
-              accusamus cupiditate alias perferendis ea ut voluptas explicabo.
-              Necessitatibus ex doloremque accusantium eum!
+          <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
+            <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+              <div className="col-span-5 col-start-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
+                accusamus cupiditate alias perferendis ea ut voluptas explicabo.
+                Necessitatibus ex doloremque accusantium eum!
+              </div>
+              <Image
+                src="/images/grass.jpg"
+                alt="grass"
+                width={250}
+                height={250}
+                className="col-span-5 col-start-8 transition"
+              />
             </div>
           </section>
-          <section className="flex h-screen w-full snap-start bg-blue-200">
-            <div className="m-auto">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-              excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
-              accusamus cupiditate alias perferendis ea ut voluptas explicabo.
-              Necessitatibus ex doloremque accusantium eum!
+          <section className="flex h-screen w-full snap-start items-center justify-center bg-blue-200">
+            <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+              <div className="col-span-5 col-start-2">
+                <div>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                  excepturi voluptatem vero commodi recusandae, eos, quia
+                  nesciunt accusamus cupiditate alias perferendis ea ut voluptas
+                  explicabo. Necessitatibus ex doloremque accusantium eum!
+                </div>
+                <Image
+                  src="/images/road.jpg"
+                  alt="grass"
+                  width={250}
+                  height={250}
+                  className="col-span-5 col-start-10 transition"
+                />
+              </div>
             </div>
           </section>
-          <section className="flex h-screen w-full snap-start bg-green-200">
-            <div className="m-auto ">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-              excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
-              accusamus cupiditate alias perferendis ea ut voluptas explicabo.
-              Necessitatibus ex doloremque accusantium eum!
+          <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
+            <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+              <div className="col-span-5 col-start-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
+                accusamus cupiditate alias perferendis ea ut voluptas explicabo.
+                Necessitatibus ex doloremque accusantium eum!
+              </div>
+              <Image
+                src="/images/pond.jpg"
+                alt="grass"
+                width={250}
+                height={250}
+                className="col-span-5 col-start-8 transition"
+              />
             </div>
           </section>
         </div>
