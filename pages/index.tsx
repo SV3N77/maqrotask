@@ -9,16 +9,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="snap max-h-screen snap-y snap-mandatory overflow-y-scroll">
-        <section className="h-screen w-full snap-start bg-red-200">
-          Section 1
-        </section>
-        <section className="h-screen w-full snap-start bg-blue-200">
-          Section 2
-        </section>
-        <section className="h-screen w-full snap-start bg-green-200">
-          Section 3
-        </section>
+      <main>
+        <div className="snap max-h-screen snap-y snap-proximity overflow-y-scroll">
+          <section className="flex h-screen w-full snap-start bg-red-200">
+            <div className="m-auto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+              excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
+              accusamus cupiditate alias perferendis ea ut voluptas explicabo.
+              Necessitatibus ex doloremque accusantium eum!
+            </div>
+          </section>
+          <section className="flex h-screen w-full snap-start bg-blue-200">
+            <div className="m-auto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+              excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
+              accusamus cupiditate alias perferendis ea ut voluptas explicabo.
+              Necessitatibus ex doloremque accusantium eum!
+            </div>
+          </section>
+          <section className="flex h-screen w-full snap-start bg-green-200">
+            <div className="m-auto ">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+              excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
+              accusamus cupiditate alias perferendis ea ut voluptas explicabo.
+              Necessitatibus ex doloremque accusantium eum!
+            </div>
+          </section>
+        </div>
       </main>
     </>
   );

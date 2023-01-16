@@ -9,8 +9,8 @@
   .snap-y {
     --scroll-snap-direction: y;
   }
-  .snap-mandatory {
-    --scroll-snap-constraint: mandatory;
+  .snap-proximity {
+    --scroll-snap-constraint: proximity;
   }
   .snap-start {
     scroll-snap-align: start;
