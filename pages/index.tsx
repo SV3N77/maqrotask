@@ -20,9 +20,9 @@ export default function Home() {
           };
         }) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("motion-safe:animate-fadeIn");
+            entry.target.classList.add("animate-fadeIn");
           } else {
-            entry.target.classList.remove("motion-safe:animate-fadeIn");
+            entry.target.classList.remove("animate-fadeIn");
           }
         }
       );
@@ -46,7 +46,7 @@ export default function Home() {
       <main>
         <div className="snap max-h-screen snap-y snap-proximity overflow-y-scroll">
           <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
-            <div className="js-show-on-scroll mx-56 grid grid-flow-row grid-cols-12 grid-rows-1 gap-8 rounded-md bg-slate-50 py-10">
+            <div className="mx-56 grid grid-flow-row grid-cols-12 grid-rows-1 gap-8 rounded-md bg-slate-50 py-10">
               <div className="js-show-on-scroll col-span-5 col-start-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
                 excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
@@ -62,12 +62,12 @@ export default function Home() {
                 alt="grass"
                 width={250}
                 height={250}
-                className="col-span-5 col-start-9"
+                className="js-show-on-scroll col-span-5 col-start-9"
               />
             </div>
           </section>
           <section className="flex h-screen w-full snap-start items-center justify-center bg-blue-200">
-            <div className="js-show-on-scroll mx-56 grid grid-flow-row grid-cols-12 grid-rows-1 gap-8 rounded-md bg-slate-50 py-10">
+            <div className="mx-56 grid grid-flow-row grid-cols-12 grid-rows-1 gap-8 rounded-md bg-slate-50 py-10">
               <div className="js-show-on-scroll col-span-5 col-start-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
                 excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
@@ -83,12 +83,12 @@ export default function Home() {
                 alt="grass"
                 width={250}
                 height={250}
-                className="js-show-on-scroll col-span-5 col-start-9 transition"
+                className="js-show-on-scroll col-span-5 col-start-9 "
               />
             </div>
           </section>
           <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
-            <div className="js-show-on-scroll mx-56 grid grid-flow-row grid-cols-12 grid-rows-1 gap-8 rounded-md bg-slate-50 py-10">
+            <div className="mx-56 grid grid-flow-row grid-cols-12 grid-rows-1 gap-8 rounded-md bg-slate-50 py-10">
               <div className="js-show-on-scroll col-span-5 col-start-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
                 excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
@@ -104,7 +104,7 @@ export default function Home() {
                 alt="grass"
                 width={250}
                 height={250}
-                className="js-show-on-scroll col-span-5 col-start-9 transition"
+                className="js-show-on-scroll col-span-5 col-start-9"
               />
             </div>
           </section>
