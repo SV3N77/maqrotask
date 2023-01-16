@@ -1,39 +1,39 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
   // initiate react-intersection-observer ref
   // use react-intersection-observer to detect if the next slide is in view
   // then replace the "js-show-on-scroll" with the css animation
 
-  // const callback = function (entries: any[]) {
-  //   entries.forEach(
-  //     (entry: {
-  //       isIntersecting: any;
-  //       target: {
-  //         classList: {
-  //           add: (arg0: string) => void;
-  //           remove: (arg0: string) => void;
-  //         };
-  //       };
-  //     }) => {
-  //       console.log(entry);
-
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("animate-fadeIn");
-  //       } else {
-  //         entry.target.classList.remove("animate-fadeIn");
-  //       }
-  //     }
-  //   );
-  // };
-  // const observer = new IntersectionObserver(callback);
-
-  // const targets = document.querySelectorAll(".js-show-on-scroll");
-  // targets.forEach(function (target) {
-  //   target.classList.add("opacity-0");
-  //   observer.observe(target);
-  // });
+  useEffect(() => {
+    const callback = function (entries: any[]) {
+      entries.forEach(
+        (entry: {
+          isIntersecting: any;
+          target: {
+            classList: {
+              add: (arg0: string) => void;
+              remove: (arg0: string) => void;
+            };
+          };
+        }) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("motion-safe:animate-fadeIn");
+          } else {
+            entry.target.classList.remove("motion-safe:animate-fadeIn");
+          }
+        }
+      );
+    };
+    const observer = new IntersectionObserver(callback);
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+    targets.forEach(function (target) {
+      target.classList.add("opacity-0");
+      observer.observe(target);
+    });
+  }, []);
 
   return (
     <>
