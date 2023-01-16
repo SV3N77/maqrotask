@@ -2,6 +2,39 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
+  // initiate react-intersection-observer ref
+  // use react-intersection-observer to detect if the next slide is in view
+  // then replace the "js-show-on-scroll" with the css animation
+
+  // const callback = function (entries: any[]) {
+  //   entries.forEach(
+  //     (entry: {
+  //       isIntersecting: any;
+  //       target: {
+  //         classList: {
+  //           add: (arg0: string) => void;
+  //           remove: (arg0: string) => void;
+  //         };
+  //       };
+  //     }) => {
+  //       console.log(entry);
+
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add("animate-fadeIn");
+  //       } else {
+  //         entry.target.classList.remove("animate-fadeIn");
+  //       }
+  //     }
+  //   );
+  // };
+  // const observer = new IntersectionObserver(callback);
+
+  // const targets = document.querySelectorAll(".js-show-on-scroll");
+  // targets.forEach(function (target) {
+  //   target.classList.add("opacity-0");
+  //   observer.observe(target);
+  // });
+
   return (
     <>
       <Head>
@@ -14,54 +47,64 @@ export default function Home() {
         <div className="snap max-h-screen snap-y snap-proximity overflow-y-scroll">
           <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
             <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
-              <div className="col-span-5 col-start-2">
+              <div className="js-show-on-scroll col-span-5 col-start-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
                 excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
                 accusamus cupiditate alias perferendis ea ut voluptas explicabo.
-                Necessitatibus ex doloremque accusantium eum!
+                Necessitatibus ex doloremque accusantium eum! Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Et excepturi voluptatem
+                vero commodi recusandae, eos, quia nesciunt accusamus cupiditate
+                alias perferendis ea ut voluptas explicabo. Necessitatibus ex
+                doloremque accusantium eum!
               </div>
               <Image
                 src="/images/grass.jpg"
                 alt="grass"
                 width={250}
                 height={250}
-                className="col-span-5 col-start-8 transition"
+                className="col-span-5 col-start-8"
               />
             </div>
           </section>
           <section className="flex h-screen w-full snap-start items-center justify-center bg-blue-200">
             <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
-              <div className="col-span-5 col-start-2">
-                <div>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-                  excepturi voluptatem vero commodi recusandae, eos, quia
-                  nesciunt accusamus cupiditate alias perferendis ea ut voluptas
-                  explicabo. Necessitatibus ex doloremque accusantium eum!
-                </div>
-                <Image
-                  src="/images/road.jpg"
-                  alt="grass"
-                  width={250}
-                  height={250}
-                  className="col-span-5 col-start-10 transition"
-                />
+              <div className="js-show-on-scroll col-span-5 col-start-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
+                accusamus cupiditate alias perferendis ea ut voluptas explicabo.
+                Necessitatibus ex doloremque accusantium eum! Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Et excepturi voluptatem
+                vero commodi recusandae, eos, quia nesciunt accusamus cupiditate
+                alias perferendis ea ut voluptas explicabo. Necessitatibus ex
+                doloremque accusantium eum!
               </div>
+              <Image
+                src="/images/mountain.jpg"
+                alt="grass"
+                width={250}
+                height={250}
+                className="js-show-on-scroll col-span-5 col-start-8 transition"
+              />
             </div>
           </section>
           <section className="flex h-screen w-full snap-start items-center justify-center bg-red-200">
             <div className="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
-              <div className="col-span-5 col-start-2">
+              <div className="js-show-on-scroll col-span-5 col-start-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
                 excepturi voluptatem vero commodi recusandae, eos, quia nesciunt
                 accusamus cupiditate alias perferendis ea ut voluptas explicabo.
-                Necessitatibus ex doloremque accusantium eum!
+                Necessitatibus ex doloremque accusantium eum! Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Et excepturi voluptatem
+                vero commodi recusandae, eos, quia nesciunt accusamus cupiditate
+                alias perferendis ea ut voluptas explicabo. Necessitatibus ex
+                doloremque accusantium eum!
               </div>
               <Image
                 src="/images/pond.jpg"
                 alt="grass"
                 width={250}
                 height={250}
-                className="col-span-5 col-start-8 transition"
+                className="js-show-on-scroll col-span-5 col-start-8 transition"
               />
             </div>
           </section>
